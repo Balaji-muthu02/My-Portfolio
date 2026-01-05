@@ -228,7 +228,7 @@
             color: #00d9ff;
         }
 
-        /* If using actual image */
+       
         .profile-img img {
             width: 480px;
             height: 480px;
@@ -237,13 +237,13 @@
             margin-bottom: 75px;
         }
 
-        /* Projects Section */
+        
         .projects {
             padding: 80px 80px;
             background: #1a1d29;
         }
 
-        /* Services Section */
+        
         .services {
             padding: 80px 80px;
             background: #0f1117;
@@ -270,6 +270,13 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
+            text-decoration: none;
+
+        }
+        .services-grid a {
+            text-decoration: none;
+            color: white;
+            margin-top: 10px;
         }
 
         .service-card {
