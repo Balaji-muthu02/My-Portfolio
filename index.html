@@ -1,211 +1,304 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E. Balaji - Full Stack Developer</title>
+    <title>E. Balaji - Full Stack Development Student</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-    
     <nav>
-        <div class="logo">
-            <!-- <i class="fas fa-code"></i> -->
-            <span>My-Portfolio</span>
-        </div>
+        <div class="logo">BALAJI</div>
         <ul class="nav-links">
-            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#home">Home</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#skills">Skills</a></li>
+            <li><a href="#gallery">Squad</a></li>
+            <li><a href="#life-skills">Life-skills</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-        
     </nav>
 
-   
     <section class="hero" id="home">
+        <div class="particles" id="particles"></div>
         <div class="hero-content">
-            <p class="greeting">Hello, <span>I'm</span></p>
-            <h1>E. Balaji</h1>
-            <p class="role">Full Stack Developer</p>
-            <p>I'm an aspiring Full Stack Developer with passion for building modern web applications. Currently learning and mastering technologies like HTML, CSS, Python, SQL, FastAPI, and more to create amazing digital experiences.</p>
-            <a href="#contact" class="cta-btn">Let's Talk</a>
-            
-            <div class="social-section">
-                <p class="social-label">Check Out My</p>
-                <div class="social-icons">
-                    <a href="https://github.com" target="_blank" title="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/feed/" target="_blank" title="LinkedIn">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <!-- <a href="https://twitter.com" target="_blank" title="Twitter">
-                        <i class="fab fa-twitter"></i>
-                    </a> -->
+            <h1 class="main-greeting">Hi, I'm <span class="name-emphasize">E. Balaji</span></h1>
+            <p class="sub-role">Full Stack Developer Student</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com" target="_blank" class="social-icon" title="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/balaji-muthu02" target="_blank" class="social-icon" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:balaji7181@gmail.com" class="social-icon" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+            <p>Scroll Down</p>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2 class="section-title">My <span>Projects</span></h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="./images/Screenshot (23).png" alt="Farm-Pick">
+                </div>
+                <div class="project-content">
+                    <h3><a href="https://balaji-muthu02.github.io/Project-Frontend/">Farm-Pick</a></h3>
+                    <p>Full Stack agricultural management application built with Python, FastAPI, and SQL.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="./images/Screenshot (24).png" alt="Static Web Project">
+                </div>
+                <div class="project-content">
+                    <h3><a href="https://balaji-muthu02.github.io/static_web_project/">Static Web Project</a></h3>
+                    <p>Clean and modern static website built with pure HTML and CSS.</p>
                 </div>
             </div>
         </div>
+    </section>
 
-        <div class="hero-image">
-            <div class="hexagon-container">
-                <div class="hexagon">
-                    <div class="hexagon-inner">
-                        <div class="profile-img">
-                            <i class="fas fa-user-tie"></i>
-                            
-                            <img src="./images/DSC00732.jpg" alt="E. Balaji">
+    <section class="skills" id="skills">
+        <h2 class="section-title">Professional <span>Skills</span></h2>
+        <div class="skills-grid">
+            <div class="skill-card" style="--progress-width: 75%">
+                <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                <h3>HTML5</h3>
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+                <div class="skill-percentage">75%</div>
+            </div>
+            <div class="skill-card" style="--progress-width: 70%">
+                <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                <h3>CSS3</h3>
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+                <div class="skill-percentage">70%</div>
+            </div>
+            <div class="skill-card" style="--progress-width: 55%">
+                <div class="skill-icon"><i class="fab fa-python"></i></div>
+                <h3>Python</h3>
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+                <div class="skill-percentage">55%</div>
+            </div>
+            <div class="skill-card" style="--progress-width: 70%">
+                <div class="skill-icon"><i class="fas fa-database"></i></div>
+                <h3>SQL</h3>
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+                <div class="skill-percentage">70%</div>
+            </div>
+            <div class="skill-card" style="--progress-width: 75%">
+                <div class="skill-icon"><i class="fab fa-github"></i></div>
+                <h3>GitHub</h3>
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+                <div class="skill-percentage">75%</div>
+            </div>
+            <div class="skill-card" style="--progress-width: 65%">
+                <div class="skill-icon"><i class="fas fa-bolt"></i></div>
+                <h3>FastAPI</h3>
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+                <div class="skill-percentage">65%</div>
+            </div>
+            <div class="skill-card" style="--progress-width: 70%">
+                <div class="skill-icon"><i class="fas fa-paper-plane"></i></div>
+                <h3>Postman</h3>
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+                <div class="skill-percentage">70%</div>
+            </div>
+            <div class="skill-card" style="--progress-width: 70%">
+                <div class="skill-icon"><i class="fa-brands fa-figma"></i></div>
+                <h3>Figma</h3>
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+                <div class="skill-percentage">70%</div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="gallery" id="gallery">
+        <h2 class="section-title">My <span>Squad</span></h2>
+        <div class="gallery-grid">
+            <div class="gallery-card">
+                <div class="gallery-image">
+                    <img src="./images/Squad_Power.jpg" alt="Squad Power">
+                </div>
+                <div class="gallery-info">
+                    <h3>Squad-Power-Presentation</h3>
+                    <p>During the Squad Power presentation, I learnt how to speak boldly and confidently in front of everyone</p>
+                </div>
+            </div>
+            <div class="gallery-card">
+                <div class="gallery-image">
+                    <img src="./images/Product_build.jpg" alt="Product Building">
+                </div>
+                <div class="gallery-info">
+                    <h3>Product Building</h3>
+                    <p>In the Product Building Challenge, I learnt how to work together as a team and avoid conflicts</p>
+                </div>
+            </div>
+            <div class="gallery-card">
+                <div class="gallery-image">
+                    <img src="./images/Workplace.png" alt="Workplace Study">
+                </div>
+                <div class="gallery-info">
+                    <h3>Workplace Study</h3>
+                    <p>In the Product Building Challenge, I learnt how to work together as a team and avoid conflicts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="life-skills" id="life-skills">
+        <h2 class="section-title">Life <span>Skills</span></h2>
+        <div class="life-skills-grid">
+            <div class="life-skill-card">
+                <h3>Adaptability</h3>
+                <p>I learnt adaptability mainly while working in a squad-based team. During squad work, I understood
+                    how to collaborate effectively, communicate with people from different generations, show mutual
+                    respect, and work together by understanding each other’s strengths and perspectives.
+
+                    This experience helped me develop strong teamwork and adaptability, allowing me to adjust easily to
+                    new teams and environments while contributing positively to group goals</p>
+                <div class="skill-tags">
+                    <span class="skill-tag">Adjusting Easily</span>
+                    <span class="skill-tag">Handling Changes</span>
+                </div>
+            </div>
+            <div class="life-skill-card">
+                <h3>Self Management</h3>
+                <p>I learnt self-management mainly through my work experience and my learning journey. When I was
+                    working, I had to manage my time, responsibilities, and tasks independently. I learnt how to plan
+                    my day, meet deadlines, and stay disciplined without constant supervision.
+
+                    Later, while studying web development, I continued practising self-management by balancing learning,
+                    practice, and improvement. This helped me become organised, focused, and consistent in my work.</p>
+                <div class="skill-tags">
+                    <span class="skill-tag">Controlling Habit</span>
+                    <span class="skill-tag">Staying Positive</span>
+                </div>
+            </div>
+            <div class="life-skill-card">
+                <h3>Social Skills</h3>
+                <p>I learnt my social skills through my daily work, where I met new people and worked in different
+                    places almost every day. This helped me become comfortable talking to others and adjusting to new
+                    environments.
+
+                    I also connect with people on LinkedIn, especially those working in IT roles. I talk to them
+                    individually to understand what they do in their daily work. This has helped me improve my
+                    communication skills and learn how to interact professionally</p>
+                <div class="skill-tags">
+                    <span class="skill-tag">Connecting with People</span>
+                    <span class="skill-tag">Asking for Help</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2 class="section-title">Get To <span>Know Me</span></h2>
+        <div class="about-container">
+            <div class="about-image-side">
+                <div class="about-profile-frame">
+                    <img src="./images/DSC00732.jpg" alt="E. Balaji Profile">
+                </div>
+            </div>
+            <div class="about-content-side">
+                <div class="about-text">
+                    <p>I'm <strong>E. Balaji</strong>, a 21-year-old <strong>Full Stack Development Student</strong>. I
+                        completed my 12th standard at a government school and gained two years of practical experience
+                        working before continuing my studies at <strong>FSSA</strong>.</p>
+                    <p>Currently, I am deeply focused on mastering both frontend and backend technologies. I am a
+                        passionate learner, constantly building projects to improve my technical and professional
+                        skills.</p>
+
+                    <div class="about-skills-interest">
+                        <h4 class="info-label" style="margin-top: 20px;">Technologies I'm Learning</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">HTML</span>
+                            <span class="skill-tag">CSS</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">FastAPI</span>
+                            <span class="skill-tag">GitHub</span>
+                            <span class="skill-tag">Postman</span>
+                            <span class="skill-tag">Figma</span>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    
-    <section class="projects" id="projects">
-        <div class="section-header">
-            <!-- <div class="section-label">Portfolio</div> -->
-            <h2 class="section-title">My Projects</h2>
-        </div>
-        <div class="services-grid">
-            <div class="service-card">
-                <div class="service-icon">
-                    <i class="fas fa-leaf"></i>
-                </div>
-                <h3> <a href="https://github.com/Balaji-muthu02/Farm-Pick.git">Farm-Pick</a></h3>
-                <p>Full Stack agricultural management application built with Python, FastAPI, and SQL for seamless farm operations</p>
-                <!-- <a href="https://github.com/Balaji-muthu02/Farm-Pick.git" class="font">Farm-Pick</a> -->
-            </div>
-            <div class="service-card">
-                <div class="service-icon">
-                    <i class="fas fa-laptop-code"></i>
-                </div>
-                <h3> <a href="http://127.0.0.1:5501/index.html#projects">Portfolio Website</a></h3>
-                <p>Modern and responsive portfolio website showcasing skills and projects with clean design principles</p>
-            </div>
-            <div class="service-card">
-                <div class="service-icon">
-                    <i class="fas fa-globe"></i>
-                </div>
-                <h3> <a href="https://github.com/Balaji-muthu02/static_web_project.git">Static Website</a></h3>
-                <p>Clean static website built with HTML5 and CSS3 featuring responsive design and modern aesthetics</p>
-                <!-- <a href="https://github.com/Balaji-muthu02/static_web_project.git" class="font">Static_Web_Project</a> -->
-            </div>
-        </div>
-    </section>
-
-    
-    <!-- <section class="services" id="services">
-        <div class="section-header">
-            
-            <h2 class="section-title">What I Do</h2>
-        </div>
-        <div class="services-grid">
-            <div class="service-card">
-                <div class="service-icon">
-                    <i class="fab fa-html5"></i>
-                </div>
-                <h3>Frontend Development</h3>
-                <p>Building responsive and modern user interfaces with HTML5 and CSS3</p>
-            </div>
-            <div class="service-card">
-                <div class="service-icon">
-                    <i class="fab fa-python"></i>
-                </div>
-                <h3>Backend Development</h3>
-                <p>Creating robust server-side applications using Python and FastAPI</p>
-            </div>
-            <div class="service-card">
-                <div class="service-icon">
-                    <i class="fas fa-database"></i>
-                </div>
-                <h3>Database Management</h3>
-                <p>Designing and managing databases with SQL for efficient data handling</p>
-            </div>
-        </div>
-    </section> -->
-
-    
-    <section class="skills" id="skills">
-        <div class="section-header">
-            
-            <h2 class="section-title">My Skills</h2>
-        </div>
-        <div class="skills-grid">
-            <div class="skill-card">
-                <div class="skill-icon"><i class="fab fa-html5"></i></div>
-                <h3>HTML</h3>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
-                <h3>CSS</h3>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon"><i class="fab fa-python"></i></div>
-                <h3>Python</h3>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon"><i class="fas fa-database"></i></div>
-                <h3>SQL</h3>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon"><i class="fab fa-github"></i></div>
-                <h3>GitHub</h3>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon"><i class="fas fa-bolt"></i></div>
-                <h3>FastAPI</h3>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon"><i class="fas fa-paper-plane"></i></div>
-                <h3>Postman</h3>
-            </div>
-        </div>
-    </section>
-
-    
-    <section class="about" id="about">
-        <div class="section-header">
-            <!-- <div class="section-label">About Me</div> -->
-            <h2 class="section-title">Get To Know Me</h2>
-        </div>
-        <div class="about-content">
-            <div class="about-text">
-                <p>I'm E. Balaji, a 20-year-old passionate developer on a journey to become a skilled Full Stack Developer. I believe in continuous learning and pushing myself to create better applications every day.</p>
-                <p>My focus is on mastering both frontend and backend technologies to build complete, scalable web applications. I'm excited about the endless possibilities in web development and ready to take on new challenges!</p>
-            </div>
-            <div class="info-grid">
-                <div class="info-item">
-                    <div class="info-label">Name</div>
-                    <div class="info-value">E. Balaji</div>
-                </div>
-                <div class="info-item">
-                    <div class="info-label">Age</div>
-                    <div class="info-value">20 Years</div>
-                </div>
-                <div class="info-item">
-                    <div class="info-label">Email</div>
-                    <div class="info-value">balaji7181@gmail.com</div>
-                </div>
-                <div class="info-item">
-                    <div class="info-label">Role</div>
-                    <div class="info-value">Full Stack Developer</div>
+                <div class="info-grid">
+                    <div class="info-card">
+                        <div class="info-label">Name</div>
+                        <div class="info-value">E. Balaji</div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-label">Age</div>
+                        <div class="info-value">21 Years</div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-label">Email</div>
+                        <div class="info-value">balaji7181@gmail.com</div>
+                    </div>
+                    <!-- <div class="info-card">
+                        <div class="info-label">Current Status</div>
+                        <div class="info-value">Full Stack Student</div>
+                    </div> -->
                 </div>
             </div>
         </div>
     </section>
 
-    
     <section class="contact" id="contact">
-        <div class="section-header">
-            <div class="section-label">Get In Touch</div>
-            <h2 class="section-title">Let's Work Together</h2>
-        </div>
-        <p>I'm always excited to work on new projects and learn new things. Feel free to reach out for collaborations or just a friendly chat!</p>
-        <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl" class="cta-btn">Contact Me</a>
+        <h2 class="section-title">Let's <span>Connect</span></h2>
+        <p>Excited to collaborate on new projects. Let's build something amazing!</p>
+        <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" class="btn-primary"><span>Contact Me</span></a>
     </section>
+
+    <!-- <script>
+        // CSS-only animations - No JavaScript needed for core functionality
+        // Only keeping particle generation for visual enhancement
+        const particlesContainer = document.getElementById('particles');
+        for (let i = 0; i < 50; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            particle.style.left = Math.random() * 100 + '%';
+            particle.style.animationDelay = Math.random() * 20 + 's';
+            particle.style.animationDuration = (Math.random() * 10 + 10) + 's';
+            particlesContainer.appendChild(particle);
+        }
+    </script> -->
 </body>
+
 </html>
