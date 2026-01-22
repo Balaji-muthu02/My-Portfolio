@@ -601,6 +601,7 @@
             background: rgba(255, 255, 255, 0.1);
             border-radius: 10px;
             overflow: hidden;
+            /* This stops anything from going outside */
             position: relative;
         }
 
@@ -609,22 +610,20 @@
             background: linear-gradient(90deg, var(--primary), var(--accent));
             border-radius: 10px;
             width: var(--progress-width);
-            transition: width 1.5s cubic-bezier(0.4, 0, 0.2, 1);
-            box-shadow: 0 0 15px var(--primary-glow);
+            /* Static Fill - Visible by default */
+            transition: none;
         }
 
         .skill-card:hover .progress-fill {
-            filter: brightness(1.2);
-            box-shadow: 0 0 25px var(--primary);
-            animation: fillOnHover 1.2s ease-out;
+            animation: fillPercentage 0.8s cubic-bezier(0.1, 0.5, 0.5, 1);
         }
 
-        @keyframes fillOnHover {
-            from {
+        @keyframes fillPercentage {
+            0% {
                 width: 0%;
             }
 
-            to {
+            100% {
                 width: var(--progress-width);
             }
         }
@@ -714,7 +713,9 @@
             transition: 0.3s;
         }
 
-        .life-skill-card:hover .skill-tag {
+        .life-skill-card:hover .skill-tag,
+        .project-card:hover .skill-tag,
+        .about-content-side:hover .skill-tag {
             background: var(--primary);
             color: #000;
             transform: translateY(-2px);
